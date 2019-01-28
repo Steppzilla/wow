@@ -1,0 +1,279 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size:13pt;
+  font-family: Roboto, Helvetica, Times New Roman;
+}
+h1{
+  font-size:20pt;
+}
+h2{
+  font-size:18pt;
+}
+h3{
+    font-size:16pt;
+}
+
+
+
+
+.auftrag0 {
+  width:100%;
+
+}
+.auftragsText{
+  width:100%;
+  display:flex;
+}
+.h11{
+  width:50%;
+  text-align: left;
+}
+.h22{
+  width:50%;
+}
+
+.üschrift{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.pic{
+  filter: invert(60%);
+  width:30pt;
+  height: 30pt;
+}
+
+.myBody{
+  display:flex;
+  width:100%;
+
+}
+
+.printArea{
+  width:100%;
+}
+
+
+.myeqn.math{
+  zoom: .6;
+  -moz-transform: scale(.6);
+
+}
+
+/* die scrollbars ewerden in den 4 elementen eingestellt:*/
+/***** width*/
+::-webkit-scrollbar {
+  /*width: 10px;*/
+  height:10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0px white;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background:  darkgrey;
+  border-radius:5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+.padding{
+  padding: 5pt;
+}
+
+
+
+.whiten{background-color:white;}
+.lightlightgrey{background-color: #A9A9A9;}
+.verydarkgrey{  background-color: #101010;}
+.darkgrey{  background-color:	#202020;}
+.lightgrey{  background-color: #282828;}
+.lightergrey{  background-color: #303030;}
+
+.verydarkblue{background-color:#0B0936;}
+.darkblue{  background-color:#1F1E4D;}
+.lightblue{background-color: #3D3B70;}
+.lighterblue{ background-color:#605E8C;}
+
+.verydarklila{background-color: #605E8C;}
+.darklila{background-color: #8C5E73;}
+.lightlila{background-color: #5E8C77;}
+.lighterlila{background-color: #8A8C5E;}
+
+.green{  background-color:#0A450F;}
+.red{  background-color:#750900;}
+.blue{  background-color:#262F73;}
+.orange{  background-color:#B78800;}
+
+.lila{  background-color:purple;}
+
+.greentext{
+  color:green;
+  font-size: inherit;
+}
+.redtext{  color:red;}
+.bluetext{  color:#0751c6;}
+.orangetext{  color:orange;}
+
+.lila{  color:purple;}
+.yellow{background-color: yellow;}
+
+.schwarz{color:black;}
+.weißgrau{color:darkgrey;}
+
+.rund{  border-radius: 5pt;}
+
+button{
+ padding: 3px 3px;
+ text-align:center;
+ border: 2px solid #4CAF50; /* Green */
+ border-radius:5px;
+ height:30pt;
+
+}
+button:hover{
+  background-color:red;
+  color:white;
+}
+
+button .pic{
+  height:100%;
+  width:auto;
+}
+
+
+.flex-wrap{
+  display:flex;
+  flex-wrap:wrap;
+}
+.flex-behälter{
+  display:flex;
+}
+
+
+.page{
+    color:darkgrey;
+}
+.grid{
+  display:grid;
+}
+.menu{
+    grid-template-columns:23% 77%;
+    height:35pt;
+    width:100%;
+}
+
+
+.innerpage1{
+  width:100%;
+  background-color:green;
+}
+
+
+.myBody{
+  width:100%;
+}
+
+.aufgabenübersicht{
+/*  font-size: 16pt;*/
+  flex-grow: column;
+  overflow:auto;
+}
+.menüicon{
+  padding:3pt;
+}
+.images{
+  opacity:1;
+  width:100%;
+}
+/*Elemente der Aufgabenübersicht (links bzw oben)*/
+.menüicon:hover {
+ background-color: yellow;
+}
+
+.menüitem1{
+  flex-direction: row;
+}
+.menüitem2{
+    flex-direction: row-reverse;
+}
+
+
+/* schmaler desktop/wenig pixel bzw Handy hochkant*/
+@media  screen and (max-width:450px){
+  body {
+	width:100%;
+  }
+ *{
+    font-size:16pt;
+  }
+
+  .aufgabenübersicht{
+    flex-direction:column;
+    height:40pt;
+    width:100%;
+  }
+  .menüicon,
+  .images{
+    height:100%;
+    width:auto;
+  }
+  .innerpage1{
+    flex:9;
+  }
+}
+
+
+
+/* Tablet Styles oder handy breitbild*/
+@media  screen and (min-width: 450px)and (max-width: 961px) {
+  *{
+         font-size:14pt;
+   }
+
+  .main,
+  .aufträge
+  {
+	  width:100%;
+  }
+
+.innerpage1{
+  flex:15;
+}
+  .aufgabenübersicht{
+    flex:1;
+    flex-direction:column;
+    background-color: : yellow;
+  }
+
+
+}
+
+/* Desktop Styles*/
+@media  screen and (min-width: 961px){
+  *{
+         font-size:13pt;
+   }
+
+  .aufgabenübersicht{
+    width:50pt;
+  flex-direction:column;
+
+  }
+
+  .innerpage1 {
+    flex-direction: column;
+  }
+
+.tab{
+  font-size:10pt;
+  height:30pt;
+}
+
+}
