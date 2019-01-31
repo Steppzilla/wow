@@ -44,15 +44,23 @@ var a1Array = [a1Array00, a1Array0, a1Array1, a1Array2];
 
 
 var ü2 = "Jadefeuermeister (Mara & Anathos)";
+var a2A='Heiler: "sengeder Funken" vor Ablauf dispeln';
+var a2Text0 = "Hauptsächlich DMG auf Mara, sie muss immer niedriger in der HP sein und verschwindet alle 30 sek (Schlag der 100 Fäuste)"
 var a2Text = "Wenn Anathros (Mage) sich wegportet muss sein Schild durch DMG entfernt werden, dann Pyroschlag->kickbar!"
+var a2Text2 = "Wenn Mara (Monk) abhaut und 'wirbelnder Jadesturm' castet -> MELEESCHLAG ";
 var a2Auftrag1 = "HC: einzelne Spieler werden vom 'Geist von Xuen' verfolgt. Dieser muss aus dem Raid und kiten, die anderen slowen + töten den Geist.";
 var a2Auftrag2 = 'HC: Es entstehen Magmafallen, die Leute hochwerfen. Diese müssen mit Immunität bzw. von unterschiedlichen Spielern durch Auslösen entfernt werden/ggf. "langsamer Fall" benutzen o.ä.. (Spieler bekommen einen Debuff  mit dem sie mehr Schaden von der nächsten Falle erhalten)';
 var a2Auftrag3='30 Energie: 3 Bomben entstehn. ';
 var a2Auftrag30 = 'In Bomben-Kuppel hineinlaufen, DMG auf sie, ihrem Strahl ausweichen! Vorige Fähigkeiten Pyro+Fallen beachten!' ;
 var a2Auftrag4='60 Energie:  Labyrinth durchqueren';
 var a2Auftrag40='Feuer ausweichen, nicht durch die Kreise! Hexerportal nutzen';
+var a2Auftrag41='Das "Minispiel" für die Tanks kann auch andere Spieler treffen!';
 
-var a2Array0 = [ü2, a2Text, a2Auftrag1, a2Auftrag2];
+var a2Auftrag5='100 Energie:  verwandlung';
+var a2Auftrag51='Um Mara herum verteilen, aus "Drachenodem" moven.';
+
+
+var a2Array0 = [ü2, a2Text0, a2Text,a2Text2, a2Auftrag1, a2Auftrag2];
 var a2Array1 = [a2Auftrag3, a2Auftrag30];
 var a2Array2 = [a2Auftrag4, a2Auftrag40];
 var a2Array = [a2Array0, a2Array1, a2Array2];
@@ -104,20 +112,53 @@ var a4Array = [a4Array0, a4Array1,a4Array2 ];
 
 
 var ü5 = "Konklave der Auserwählten";
-var a5Text="";
-var a5Auftrag1 = "";
-var a5Auftrag2 = '';
-var a5Auftrag3 = '';
-var a5Array0 = [ü5, a5Text, a5Auftrag1, a5Auftrag2];
+var a5A = 'Achtung, vorm Boss stehn ist nicht gut!';
+var a5Text="1. Target: Paku (achtung, reihenfolge ist variabel)";
+var a5Text1="Pakus Zorn -> schauen, wo Drache hinfliegt, in den Kreis hinein!";
+var a5Auftrag1 = "Buff: 'greentext'>Geschenk des Windes</span> -> Gegner purgen oder Zauberraub";
+var a5Auftrag2 = '2. Target: Gonk. bei 100% Energie verflucht er Spieler zu kleinen Dinos ->rauslaufen, dispeln lassen';
+var a5Auftrag3 = 'Alle 60 sek: Gonks Zorn -> Raptoren töten, Dispeln , slowen (HC: Nicht näher als 5 meter zusammenkiten)';
+var a5Auftrag4 = 'Kimbul: "Blutende Winde  - 5 Meter range einhalten"';
+var a5Auftrag5 = 'Aspekt von Akunda: "donnernder Sturm", "Gedankentilgung"';
+var a5Auftrag6 = 'Akundas Zorn: 5 Meter range, Kugel spawnen aus einem';
+var a5Auftrag7 = 'hc: springendem Frosch ausweichen';
+var a5Auftrag8 = 'hc: Wenn einer der Typen stirbt, gibt es AE-Schaden der gegenzuheilen ist.';
+var a5Array0 = [ü5,a5A, a5Text,a5Text1, a5Auftrag1, a5Auftrag2];
 var a5Array = [a5Array0];
 
 
-var ü6 = "König Rastakhan";
-var a6Text= "";
-var a6Auftrag1 = "";
-var a6Auftrag2 = "";
-var a6Array0 = [ü6, a6Text, a6Auftrag1, a6Auftrag2];
-var a6Array = [a6Array0];
+var ü6 = "<h1> König Rastakhan </h1>";
+var a6Text= "Tank: 'sengende Detonation'-> weg (Entfernung reduziert dmg)";
+var a6Text0= "Weicht allen Effekten aus!"
+
+var ü61 = "<h2 class='h11'>  </h2> <h2 class='h22'> Phase 1 </h2>";
+var a6Auftrag1 = "Spieler mit 'Verheerender Axt -> ü 90% hp heilen!', ggf. Rastakhan weit weg tanken";
+var a6Auftrag2 = "In den 'Meteorsprung' laufen";
+
+var ü62 = "<h2 class='h11'> Alle Adds tot </h2> <h2 class='h22'> Phase 2 </h2>";
+
+var a6A21 = "Sofort auf das 'Zombiestaubtotem' wechseln! (Nicht auf den übernommenen Spieler)";
+var a6A22 = "Verteilt stehn, Krötenplage ausweichen (3 Kröten spawnen kegelförmig von ihm weg)";
+var a6A23 = "'Feuerplage' - verteilt stehn, Kreise nicht spreaden";
+var a6A24 = "'Todesriss'-> am Rand ablegen (werden die Portale, aus denen später Kugeln spawnen bzw unten Stacks resettet wrden können)";
+
+var ü63 = "<h2 class='h11'> Rasta 60% HP </h2> <h2 class='h22'> Phase 3 </h2>";
+var a63A1 = "Beste DDs + Heal zu Bwondsami -> Reich des Todes. Viel Movement (Kugeln), dort im Todesriss Stacks regelmäßig resetten (nicht unnötig oft, möglichst wenn Raid stabil, da es auch ein AE ist)";
+var a63A2 = "Phase 2. Fähigkeiten weiterhin beachten!";
+var a63A3 = "'Unausweichliches Ende -> weglaufen /gegen das Heranziehen anlaufen'";
+var a63A4 = "'Todesriss'-> am Rand ablegen (werden die Portale, aus denen später Kugeln spawnen bzw unten Stacks resettet wrden können)";
+var a63A5 = "'Sigel von Bwondamdi' -> ein spieler rein! (110k dmg) . Wenn nicht: Bwonsamdis Zorn (40m 90k pro Spieler)"
+
+var ü64 = "<h2 class='h11'> Rasta im Reich des Todes 50% HP </h2> <h2 class='h22'> Phase 4 </h2>";
+var a64A1 = "Wie sonst: Ausweichen! Es werden immer mehr Kugeln und weiterhin Detonation auf Tanks, Feuerringe, Todesrisse und das unausweichliche Ende!";
+
+var a6Array0 = [ü6, a6Text, a6Text0];
+var a6Array1 = [ü61, a6Auftrag1, a6Auftrag2];
+var a6Array2 = [ü62, a6A21, a6A22, a6A23,a6A24];
+var a6Array3 = [ü63, a63A1, a63A2,a63A3,a63A4,a63A5];
+var a6Array4 = [ü64, a64A1];
+
+var a6Array = [a6Array0,a6Array1,a6Array2,a6Array3,a6Array4];
 
 
 
@@ -125,17 +166,24 @@ var a6Array = [a6Array0];
 
 
 var ü7 = "Hochtüftler Mekkadrill";
-var a7Text ="";
-var a7Auftrag1 = "";
-var a7Array0 = [ü7, a7Text, a7Auftrag1];
-var a7Array = [a7Array0];
+var a7Text ="Boss dreht sich in eine richtung und lädt eine blaue Kugel auf -> Vor ihm weg! (Sprengkanone)";
+var a7Auftrag1 = "'Gigavoltentladung' -> hinter eine Mauer!";
+var a7Auftrag2 = "'schwere Schubdüse'  -> ausweichen!";
+var a7Auftrag3 = "Nicht unnötig moven, achtet auf geschrumpfte Spieler! (mini-leute bekommen sonst 130k dmg + 1sek stun)";
+var a7Auftrag4 = " Spieler, die geschrumpft wurden, gehen in die Funkbots";
+var a7Auftrag5 = " Funkbots: Wer einen Bot betritt hat 45 Sek zeit, den Code einzugeben, den aber nur Leute in anderen BOts sehen.";
+var a7Auftrag6 = "<h2 class='h11'> Boss auf 40% HP </h2> <h2 class='h22'> Phase 2 </h2>";
+var a7Auftrag7 = "Schafen + Schrapnellen, die aus den Schafen kommen ausweichen!"
+var a7Array0 = [ü7, a7Text, a7Auftrag1,a7Auftrag2,a7Auftrag3,a7Auftrag4,a7Auftrag5];
+var a7Array1=[a7Auftrag6,a7Auftrag7];
+var a7Array = [a7Array0, a7Array1];
 
 
 ////$(".test").html(a7Text +'<p> \\( a^2 \\) </p>');
 //$(".test").append('<div style="font-size: 40; height:40pt;"> \\( a^2 \\) </div>');
 
 var ü8 ="Sturmwallblockade";
-var a8Text = "";
+var a8Text = "<div class='halbzeit'>  links: Bruder Joseph </div><div class='halbzeit'> Schwester Katharina </div>";
 var a8Auftrag1 = "";
 var a8Array0 = [ü8, a8Text, a8Auftrag1];
 var a8Array = [a8Array0];
@@ -174,5 +222,45 @@ var a9Array3= [a9Int21, a9Int22, a9Int23, a9Int24, a9Int25, a9Int26, a9Int27]
 var a9Array= [a9Array0, a9Array1, a9Array2, a9Array3];
 
 
-var aufgabenVierfelder = [a1Array, a2Array, a3Array, a4Array, a5Array, a6Array, a7Array, a8Array, a9Array];
+
+var ü10 = "<h1> Myth+ Breakpoints </h1> ";
+var a10A = "Kronsteig";
+var a10A1 = " normal: 1. Treppe: 67,47 %, 2. Treppe: 82,7 %.";
+var a10A2 = "<span class='bluetext'> wimmelnd: 1. Treppe: 68,79 %, 2. Treppe: 83,82 %.<span>";
+
+var a10B = " Schrein des Sturms (mit Brücken-skip)";
+var a10B1 = "beim 2. Boss: 63,44%, vorm Brücken-skip 75,98% ! später auslassbar: 1Tentakelseite: 2,42%, 3 gruppen Endbossraum: 10,88 %";
+var a10B2 =  "<span class='bluetext'> beim 2. Boss: 67,13%, vorm Brücken-skip 79,97% ! später auslassbar: 1Tentakelseite : 2,02%, 3 Gruppen Endbossraum: 9,07 % </span>";
+
+var a10E = "Boralus";
+var a10E1 = " normal: Kommandantin: ca. 49,84  - 'Treppe hoch' 76,18%";
+var a10E2 = " <span class='bluetext'> wimmelnd:  Kommandantin: ca. 54,05  -  'Treppe hoch' 80,16% </span>";
+
+
+var a10C = "Tol Dagor";
+var a10C1 = " normal: ohne Bombentyp: 60,06% (mit ihm: 62,07%)";
+var a10C2 = " <span class='bluetext'> wimmelnd: ohne Bombentyp: 61,15% (mit ihm: 62,83%) </span>";
+
+var a10D = "Tempel von Sethralis";
+var a10D1 = " Bei Galvazzt:  65,91 %, Herzwächter: 2,73";
+var a10D2 =  "<span class='bluetext'> Bei Galvazzt:  71,59 %, Herzwächter: 2,27 </span>";
+
+
+var a10F = "Freihafen";
+var a10F1 = " normal: 'Brücke': mind 67,05 %.";
+var a10F2 = "<span class='bluetext'> wimmelnd: 'Brücke': mind 70,61 %. </span>";
+
+var a10Array00 = [ü10];
+var a10Array0 = [a10A, a10A1, a10A2];
+var a10Array1 = [ a10B, a10B1, a10B2];
+var a10Array2 = [ a10C, a10C1, a10C2];
+var a10Array3 = [ a10D, a10D1, a10D2];
+var a10Array4 = [ a10E, a10E1, a10E2];
+var a10Array5 = [ a10F, a10F1, a10F2];
+
+
+var a10Array = [a10Array00, a10Array0,a10Array4,a10Array1,a10Array2,a10Array5,a10Array3];
+
+
+var aufgabenVierfelder = [a1Array, a2Array, a3Array, a4Array, a5Array, a6Array, a7Array, a8Array, a9Array, a10Array];
 //var lösungenVierfelder = [a1LösungsString, a2LösungsString, a3LösungsString, a4LösungsString, a5LösungsString,  a6LösungsString, a7LösungsString, a8LösungsString,a9LösungsString];

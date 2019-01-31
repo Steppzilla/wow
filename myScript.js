@@ -45,7 +45,17 @@ $("#Aufgabenübersicht").find("p").click(function(){
 					case 4:
 						x= $("#Aufträge4").children().eq(i);
 						break;
+					case 5:
+						x= $("#Aufträge5").children().eq(i);
+						break;
+					case 6:
+						x= $("#Aufträge6").children().eq(i);
+						break;
+					case 7:
+						x= $("#Aufträge7").children().eq(i);
+						break;
 					}
+
 					x.show();
 					x.html('<div class="auftragsText">' + aufgabenVierfelder[zahl][j][i] + '</div>');  //aufträge
 		//		x.html('<p class="überschrift">' + letter + '</p>'); //Buchstabe vorm auftrag
