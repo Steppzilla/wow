@@ -8,12 +8,13 @@ linkeSeiteschreiben();
 //$(".menu").find(".druck").hide();
 
 $(".flex-behälter").hide();
-
+$(".auftrag0").hide();
 
 //Aufgaben schreiben wenn bild angeklickt wird: und lösungs-ILndex speichern ('aufgabenwahl');
 
 $("#Aufgabenübersicht").find("p").click(function(){
-
+	$(".flex-behälter").hide();
+	$(".auftrag0").hide();
 	$("#Aufgabenübersicht").children().removeClass("yellow");
 	$(this).addClass("yellow");
 	var zahl=	$(this).index();
@@ -46,12 +47,15 @@ $("#Aufgabenübersicht").find("p").click(function(){
 					x.show();
 					x.html('<div class="auftragsText">' + aufgabenVierfelder[zahl][j][i] + '</div>');  //aufträge
 		//		x.html('<p class="überschrift">' + letter + '</p>'); //Buchstabe vorm auftrag
-
+			$(".h11").parent().css("display","flex");
 
 							//	alert(aufgabenVierfelder[zahl][j][i] + "nicht definiert");
 
 
 			}
+		}
+		for(j=aufgabenVierfelder[zahl].length; j<4;j++){
+
 		}
 });
 
@@ -246,7 +250,7 @@ function nurLös(){
 		$(".lösungsplace").find(".üschrift").remove();
 		var üschrift = 0;
 	 	for(i=0;i<20;i++){
-		  üschrift = $(".printArea").find(".Nüberschrift").eq(i).text();
+		//  üschrift = $(".printArea").find(".Nüberschrift").eq(i).text();
 			$(".lösungsplace").eq(i).prepend("<p class='üschrift'>" + üschrift + "</p>");
  		}
 		$(".lösungsplace").show();

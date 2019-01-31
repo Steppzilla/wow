@@ -8,13 +8,13 @@
   font-family: Roboto, Helvetica, Times New Roman;
 }
 h1{
-  font-size:20pt;
-}
-h2{
   font-size:18pt;
 }
+h2{
+  font-size:15pt;
+}
 h3{
-    font-size:16pt;
+    font-size:15pt;
 }
 
 
@@ -26,14 +26,14 @@ h3{
 }
 .auftragsText{
   width:100%;
-  display:flex;
 }
 .h11{
-  width:50%;
+  width:60%;
   text-align: left;
 }
 .h22{
-  width:50%;
+  width:40%;
+  text-align:center;
 }
 
 .üschrift{
@@ -50,8 +50,8 @@ h3{
 
 .myBody{
   display:flex;
+  flex-wrap:nowrap;
   width:100%;
-
 }
 
 .printArea{
@@ -172,18 +172,13 @@ button .pic{
 
 .innerpage1{
   width:100%;
-  background-color:green;
-}
-
-
-.myBody{
-  width:100%;
 }
 
 .aufgabenübersicht{
 /*  font-size: 16pt;*/
   flex-grow: column;
   overflow:auto;
+  width:45pt;
 }
 .menüicon{
   padding:3pt;
@@ -213,7 +208,9 @@ button .pic{
  *{
     font-size:16pt;
   }
-
+.myBody{
+  flex-direction: column;
+}
   .aufgabenübersicht{
     flex-direction:column;
     height:40pt;
@@ -224,11 +221,8 @@ button .pic{
     height:100%;
     width:auto;
   }
-  .innerpage1{
-    flex:9;
-  }
-}
 
+}
 
 
 /* Tablet Styles oder handy breitbild*/
@@ -237,21 +231,15 @@ button .pic{
          font-size:14pt;
    }
 
-  .main,
   .aufträge
   {
 	  width:100%;
   }
 
-.innerpage1{
-  flex:15;
-}
   .aufgabenübersicht{
-    flex:1;
     flex-direction:column;
     background-color: : yellow;
   }
-
 
 }
 
@@ -260,11 +248,8 @@ button .pic{
   *{
          font-size:13pt;
    }
-
   .aufgabenübersicht{
-    width:50pt;
   flex-direction:column;
-
   }
 
   .innerpage1 {

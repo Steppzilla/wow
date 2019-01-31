@@ -1,4 +1,6 @@
-//coloring()
+coloring()
+
+
 
 function coloring(){
 	$("p").css("line-height","1.5");
@@ -12,7 +14,7 @@ function coloring(){
 	$("h3").addClass("rund");
 	//Baum-Hintergrund:
 	$("#mySVG").addClass("rund");
-	$(".main").find("p").addClass("padding");
+	$(".main").find("div").addClass("padding");
 	$(".aufträge").find(".flex-behälter").addClass("padding");
 	$(".con").addClass("padding");
 
