@@ -23,7 +23,9 @@ $("#Aufgabenübersicht").find("p").click(function(){
 
 	//	var phasenzahl = aufgabenVierfelder[zahl].length -1;
 	for(j=0; j<aufgabenVierfelder[zahl].length; j++){
+
 		for(i=0;i<aufgabenVierfelder[zahl][j].length;i++){
+		//	alert(j + " j und i : " + i);
 
 					var x="";
 				//	alert(j +  " + " + i + "definiert");
@@ -47,15 +49,9 @@ $("#Aufgabenübersicht").find("p").click(function(){
 					x.show();
 					x.html('<div class="auftragsText">' + aufgabenVierfelder[zahl][j][i] + '</div>');  //aufträge
 		//		x.html('<p class="überschrift">' + letter + '</p>'); //Buchstabe vorm auftrag
-			$(".h11").parent().css("display","flex");
-
-							//	alert(aufgabenVierfelder[zahl][j][i] + "nicht definiert");
-
-
+					$(".h11").parent().css("display","flex");
+					$(".halbzeit").parent().css("display","flex");
 			}
-		}
-		for(j=aufgabenVierfelder[zahl].length; j<4;j++){
-
 		}
 });
 

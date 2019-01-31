@@ -24,19 +24,19 @@ var a14icon='<img class="images" src="https://img.icons8.com/wired/64/000000/nur
 var iconString = [a1icon, a2icon, a3icon, a4icon, a5icon, a6icon, a7icon, a8icon, a9icon, a10icon, a11icon,a12icon, a13icon, a14icon];
 
 var ü1="<h1> Champions des Lichts </h1>";
-var a1Text="Movement-Anforderung:";
-var a1Text1 = " Nicht zwischen Boss+Adds stehen, ggf. der goldenen Woge ausweichen (Berührung hinterlässt DOT)";
+//var a1Text="Movement-Anforderung:";
+var a1Text1 = " Nicht zwischen Boss+Adds stehen, ggf. der goldenen <span class='greentext'> Woge des Lichts </span> ausweichen, die sich richtung Adds bewegt (Berührung -> DOT)";
 var a1Text2 = " ggf. aus der Weihe moven (Kreis vom dicken Melee-Add)";
-var a1Text3 = "Bei 'blendender Glaube' -> vom Melee-Add wegdrehen (sonst Fear)";
+var a1Text3 = "Bei <span class = 'greentext'> blendender Glaube </span> -> vom Melee-Add wegdrehen (sonst Fear)";
 var a1ü2 = "<h2 class='h11'> 0-100% Energie - Boss-Buff: <span class='greentext'> Siegel der Vergeltung </span> </h2> <h2 class='h22'> Phase 1 </h2>";
 var a1Auftrag1 = "DMG auf den BOSS! (wenn Add stirbt -> erhöhter Raid-DMG durch 'Unermüdlichkeit')";
 var ü12 = "<h2 class='h11'> 0-100% Energie - Boss-Buff: <span class='greentext'> Siegel der Abrechnung </span> </h2> <h2 class='h22'> Phase 2 </h2>";
 var a1Auftrag3 = "KEIN DMG AUF BOSS, wechsel auf ADDS! (sonst -> höherer Raiddmg inc. durch 'Unermüdlichkeit')";
-var a1Auftrag4 = "kick: 'Heilung' / 'Sühne'";
+var a1Auftrag4 = "kick: <span class='greentext'> Heilung </span> / <span class='greentext'> Sühne </span>";
 var a1Auftrag6 = "Purge auf Gegner, die von der Welle getroffen wurden. (Sie heilen sich)";
 var a1Auftrag7 = "Wenn Adds tot sind, WARTEN bis Energie voll ist und PH 1 erneut beginnt";
 var ü13 = "<h2 class='h11'> 30% Boss-HP </h2> <h2 class='h22'> HT </h2>";
-var a1Array00 = [ü1, a1Text, a1Text1, a1Text2, a1Text3];
+var a1Array00 = [ü1, a1Text1, a1Text2, a1Text3];
 var a1Array0 = [ a1ü2,a1Auftrag1];
 var a1Array1 =[ ü12, a1Auftrag3, a1Auftrag4,a1Auftrag6, a1Auftrag7];
 var a1Array2 = [ ü13];
@@ -71,14 +71,35 @@ var a3Array = [a3Array0, a3Array1];
 
 
 var ü4 = "Schatzwächter/Opulenz";
-var a4Text="";
-var a4Auftrag1 = "";
-var a4Auftrag2 = "";
-var a4Auftrag3 = "";
-var a4Auftrag4 = "";
-var a4Auftrag5 = "";
-var a4Array0 = [ü4, a4Text, a4Auftrag1, a4Auftrag2, a4Auftrag3, a4Auftrag4, a4Auftrag5];
-var a4Array = [a4Array0];
+var a4Text="<div class='halbzeit'>  links: Yalats Bollwerk </div> <div class='halbzeit'> rechts: Hand von In'zashi </div>";
+var a4Auftrag1 = "<div class='halbzeit'> R1: 100-90%: <span class='greentext'> Unstete Ladung </span> -> raus, hinterlässt Kugel </div> <div class='halbzeit'> <span class='greentext'>Flammende Bestrafung</span>->timer beobachten, direkt hinter ihn und im Uhrzeigersinn ausweichen</div>";
+var a4Auftrag2 = "<div>  rechts+links: <span class='greentext'>Zermalmen </span> -> ausweichen! Er habt meist beide Arme, dann muss man schnell hinter ihn </div>";
+var a4Auftrag3 = "<div> R2: 90-80%: <span class='greentext'> Flammenstrahl </span> (aus der Wand)-> 2x ausweichen (weniger gefährlich als rechts die Bestrafung) </div>";
+var a4Auftrag4 = "<div> R3: 80-70%:  <span class='greentext'>Rubinstrahl </span> (aus der Wand)-> möglichst nach aussen tragen/ausweichen </div>";
+var a4Auftrag5 = "<div> R4: 70-60%:  <span class='greentext'>Pulsbeschleunigendes Gift </span> macht alle 2 sek ca. 10k Naturschaden, der sich erhöht! Wer unter 50% HP droppt und dadurch Schaden erleidet bekommt <span class='greentext'> Beschleunigter Puls</span> (10 sek lang ca. 260 haste/krit/versa/mastery)</div>";
+var a4Auftrag6 = "<div> R5: 60-50%:  <span class='greentext'>Verhexung der Lethargie </span> nicht moven, dispeln!</div>";
+var a4Auftrag7 = "<div> R6: 50-40%:  Fähigkeiten aus R2+R3<span class='greentext'>Pulsbeschleunigendes Gift </span> macht alle 2 sek ca. 10k Naturschaden, der sich erhöht! Wer unter 50% HP droppt und dadurch Schaden erleidet bekommt <span class='greentext'> Beschleunigter Puls</span> (10 sek lang ca. 260 haste/krit/versa/mastery)</div>";
+var a4Auftrag8 = "<div> R7: 40-30%:  Juwelen";
+var a4Auftrag9 = "<div> R8: 30-0%:  ggf. HT oder private CDS... (achtung rechts: Bestrafung füllt den halben Raum! Noch besser moven!)";
+var a4Auftrag10 = "<div> R8: 0%:  WARTEN bis anderer Wächter tot ist, denn sobald man den Raum betritt bufft er sich für jedes dann noch lebende Add. Auch auf Tanks warten :)";
+var ü41 = " Bosskampf";
+var ü41A1 = "<div> <span class='greentext'> Flüssiges Gold </span> -> zum Rand bringen! </div>";
+var ü41A2 = "Add-Spawn in der Mitte: STUNNEN, damit sie sich nicht verteilen, AE! </div>";
+var ü41A3 = "<div> <span class='greentext'> Münzregen </span> ->alle REIN/Meteor-effekt </div>";
+var ü41A31 = "Heiler mit lila Stein bei <div> <span class='greentext'> Klagelied der Gier: </span> -> buff auf allen aktiv halten!</div>";
+var ü41A4 = " Wissenswertes über die Steine:";
+var ü41A5 = "  Diamant (weiß)/TANK ist ein Schild, der nach Verbrauch 30 sek aufladen muss.  50% Absorb, max 300% der Spieler-HP ";
+var ü41A6 = "  Saphir (blau)/HEAL bufft geheilte Targets mit   <span class='greentext'>Rückenwind </span> (hält 30 sek, + 5% dmg), bei 5 Stacks:  <span class='greentext'>Beruhigende Brise </span> (12 sek 200% dmg/heal)  ";
+var ü41A7 = "  Amethyst (lila)/HEAL +50% Tempo, bufft Ziele mit  <span class='greentext'>Schattenberührt</span> (90% weniger erlittener shadow-dmg, wenn er Schattendmg bekommt erhalten Spieler in 10 meter Range 1% mana)   ";
+var ü41A8 = "  Rubin (rot)/2DD bufft <span class='greentext'>Fokussierter Animus</span> (dauer 5 sek, erhöht den erlittenen DMG des Ziels um 1%). Stackt maximal 1 mal pro Sek."
+var ü41A9 = "  Topaz (gelb)/2DD bufft <span class='greentext'>Strahlen</span> wenn kein Spieler in der Nähe ist. Ziel: 100 Stapel (nach 95 sek alleinsein) gewährt   <span class='greentext'>Gütiges Strahlen</span>, mit diesem lauft ihr in die Gruppe, welche dann für 20 sek 100% Krit gebufft bekommt";
+var ü41A10 = "  Opal (dunkelgrün)/DD bufft dir selbst <span class='greentext'>Entfesselte Wut</span> (+2% dmg) pro neu angegriffenem Target"
+var ü41A11 = "  Smaragd (hellgrün)/DD bufft dir selbst <span class='greentext'>irdene Wurzeln</span> (+1% dmg) wenn ihr euch nicht bewegt! Sonst verschwindet er schnell...."
+
+var a4Array0 = [ü4, a4Text, a4Auftrag1, a4Auftrag2, a4Auftrag3, a4Auftrag4, a4Auftrag5, a4Auftrag5, a4Auftrag6, a4Auftrag7, a4Auftrag8, a4Auftrag9, a4Auftrag10];
+var a4Array1 = [ü41,ü41A1,ü41A2,ü41A3];
+var a4Array2 = [ü41A4,ü41A5,ü41A6,ü41A7,ü41A8,ü41A9,ü41A10,ü41A11];
+var a4Array = [a4Array0, a4Array1,a4Array2 ];
 
 
 

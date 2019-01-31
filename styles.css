@@ -18,7 +18,15 @@ h3{
 }
 
 
-
+.halbzeit{
+  width:50%;
+  border-left: 2pt;
+  border-top:0pt;
+  border-right: 0pt;
+  border-bottom: 0pt;
+  border-style: solid;
+  padding: 5pt;
+}
 
 .auftrag0 {
   width:100%;
