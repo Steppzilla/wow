@@ -83,12 +83,12 @@ var a4Text="<div class='halbzeit'>  links: Yalats Bollwerk </div> <div class='ha
 var a4Auftrag1 = "<div class='halbzeit'> R1: 100-90%: <span class='greentext'> Unstete Ladung </span> -> raus, hinterlässt Kugel </div> <div class='halbzeit'> <span class='greentext'>Flammende Bestrafung</span>->timer beobachten, direkt hinter ihn und im Uhrzeigersinn ausweichen</div>";
 var a4Auftrag2 = "<div>  rechts+links: <span class='greentext'>Zermalmen </span> -> ausweichen! Er habt meist beide Arme, dann muss man schnell hinter ihn </div>";
 var a4Auftrag3 = "<div> R2: 90-80%: <span class='greentext'> Flammenstrahl </span> (aus der Wand)-> 2x ausweichen (weniger gefährlich als rechts die Bestrafung) </div>";
-var a4Auftrag4 = "<div> R3: 80-70%:  <span class='greentext'>Rubinstrahl </span> (aus der Wand)-> möglichst nach aussen tragen/ausweichen </div>";
+var a4Auftrag4 = "<div> R3: 80-70%:  <span class='greentext'>Rubinstrahl </span> (verfolgt einen)-> möglichst nach aussen tragen/ausweichen </div>";
 var a4Auftrag5 = "<div> R4: 70-60%:  <span class='greentext'>Pulsbeschleunigendes Gift </span> macht alle 2 sek ca. 10k Naturschaden, der sich erhöht! Wer unter 50% HP droppt und dadurch Schaden erleidet bekommt <span class='greentext'> Beschleunigter Puls</span> (10 sek lang ca. 260 haste/krit/versa/mastery)</div>";
 var a4Auftrag6 = "<div> R5: 60-50%:  <span class='greentext'>Verhexung der Lethargie </span> nicht moven, dispeln!</div>";
 var a4Auftrag7 = "<div> R6: 50-40%:  Fähigkeiten aus R2+R3<span class='greentext'>Pulsbeschleunigendes Gift </span> macht alle 2 sek ca. 10k Naturschaden, der sich erhöht! Wer unter 50% HP droppt und dadurch Schaden erleidet bekommt <span class='greentext'> Beschleunigter Puls</span> (10 sek lang ca. 260 haste/krit/versa/mastery)</div>";
 var a4Auftrag8 = "<div> R7: 40-30%:  Juwelen";
-var a4Auftrag9 = "<div> R8: 30-0%:  ggf. HT oder private CDS... (achtung rechts: Bestrafung füllt den halben Raum! Noch besser moven!)";
+var a4Auftrag9 = "<div> R8: 30-0%:  achtung rechts: Bestrafung füllt den halben Raum! Noch besser moven! links: häufigere Ladung";
 var a4Auftrag10 = "<div> R8: 0%:  WARTEN bis anderer Wächter tot ist, denn sobald man den Raum betritt bufft er sich für jedes dann noch lebende Add. Auch auf Tanks warten :)";
 var ü41 = " Bosskampf";
 var ü41A1 = "<div> <span class='greentext'> Flüssiges Gold </span> -> zum Rand bringen! </div>";
