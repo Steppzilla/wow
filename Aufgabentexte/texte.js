@@ -183,10 +183,26 @@ var a7Array = [a7Array0, a7Array1];
 //$(".test").append('<div style="font-size: 40; height:40pt;"> \\( a^2 \\) </div>');
 
 var ü8 ="Sturmwallblockade";
+var a8Text0 = "Wenn die Energie des Elementars auf 100% steigt, ist der Tod nah! (Enrage)";
 var a8Text = "<div class='halbzeit'>  links: Bruder Joseph </div><div class='halbzeit'> Schwester Katharina </div>";
-var a8Auftrag1 = "";
-var a8Array0 = [ü8, a8Text, a8Auftrag1];
-var a8Array = [a8Array0];
+var a8Auftrag1 = "<div class='halbzeit'>  Gruppenschaden: Gezeitensalve </div><div class='halbzeit'> Gruppenschaden: Elektrische Salve </div>";
+var a8Auftrag2 = "<div class='halbzeit'>  rauslaufen mit: 'Meeresstrom' (slow-Fläche)   </div><div class='halbzeit'>rauslaufen mit: 'Knisternder Blitz' (größere Entfernung -> geringerer Silence) </div>";
+var a8Auftrag3 = "<div class='halbzeit'>  Absorb-Schild: 'Gezeitenhülle' (350k)-> dmg hierfür aufheben! </div><div class='halbzeit'>  Absorb-Schild: 'Elektrische Umhüllung'(350k) -> dmg hierfür aufheben! </div>";
+var a8Auftrag4 = "<div class='halbzeit'>  kick, wenn Schild weg (sonst alle 3 sek+2Energie)</div><div class='halbzeit'> kick, wenn Schild weg (sonst alle 3 sek+2Energie)</div>";
+var a8Auftrag5 = "<div class='halbzeit'>  'Versuchung des Meeres' ->hinter slow-Fläche + weg von Sirene </div><div class='halbzeit'> Voltaischer Blitz -> Ränder beobachten, safe zone suchen, anschließend zurück </div>";
+var a8Auftrag6 = "<div class='halbzeit'>  gleichzeitig töten! (sonst Energie)</div><div class='halbzeit'> gleichzeitig töten! (sonst Energie)</div>";
+var a8Auftrag7 = " HC: Bei 50% werden die Bosse ausgetauscht";
+var a8Auftrag8 = " Man knan jederzeit aufs andere Schiff per Teleport. Wenn Bosse tot -> teleport nach unten";
+
+var a8Auftrag9 = "<h2 class='h11'>Tank in Range vom Ele: HT </h2> <h2 class='h22'>   Kampf gegen das Elementar </h2>";
+var a8Auftrag10 = "'Meeresflut' -> 4 Meter Range oder schnell moven! (Flächen entstehn)";
+var a8Auftrag11 = "'Sturmesheulen'-> Flächen löschen durch Durchrennen und Abstand vom Boss gewinnen!";
+var a8Auftrag12 = "-> Spieler spawnt Energiesturm (slow, schnell töten, sonst: Energie auf Boss). Tanks lassen sich ausserdem in der nähe dispeln";
+var a8Auftrag13 = "'Zone der Explosion -> reinstellen! Spawnt anfangs nur 1, dann 2, dann 3 in kurzen Zeitabständen nacheinander! (sost: Zorn der Tiefe)'";
+
+var a8Array0 = [ü8, a8Text, a8Auftrag1,a8Auftrag2,a8Auftrag3,a8Auftrag4,a8Auftrag5,a8Auftrag6,a8Auftrag7,a8Auftrag8];
+var a8Array1 = [a8Auftrag9,a8Auftrag10,a8Auftrag11,a8Auftrag12,a8Auftrag13];
+var a8Array = [a8Array0,a8Array1];
 
 
 var ü9 = "<h1> Lady Jaina Prachtmeer </h1> ";
