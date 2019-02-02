@@ -64,9 +64,9 @@ $("#Aufgabenübersicht").find("p").click(function(){
 			}
 		}
 });
-
-
-
+$(".flex-behälter").click(function(){
+	$(this).toggleClass("yellow");
+});
 
 function linkeSeiteschreiben(){
 	for(i=0;i<aufgabenVierfelder.length;i++){
