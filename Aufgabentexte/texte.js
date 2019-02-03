@@ -36,11 +36,18 @@ var a1Auftrag4 = "kick: <span class='greentext'> Heilung </span> / <span class='
 var a1Auftrag6 = "Purge auf Gegner, die von der Welle getroffen wurden. (Sie heilen sich)";
 var a1Auftrag7 = "Wenn Adds tot sind, WARTEN bis Energie voll ist und PH 1 erneut beginnt";
 var ü13 = "<h2 class='h11'> 30% Boss-HP </h2> <h2 class='h22'> HT </h2>";
+
+var myt00 = '<span class="redtext"> MYTHISCH: </span>';
+var myt01 = '<span class="redtext"> Gebet für die Gefallenen </span> -> alle (tote + lebendige) adds casten! Die Kreuzfahrer casten "Göttlicher Hammer", dadurch spawnen sie für 8 Sek Lichtkugeln, welche bei Berührung 70k dps machen';
+var myt02 = 'Caster casten: <span class="redtext"> Himmlische Erneuerung/Angelic Renewal  </span>  (caster, 10 sek zeit zum kicken, sonst boss full hp). Am besten pro caster einen Spieler einteilen zum kicken';
+var myt03 =' Alle Kicker: Merken, wo euer add starb, dort wird es wieder belebt + castet!';
+
 var a1Array00 = [ü1, a1Text1, a1Text2, a1Text3];
 var a1Array0 = [ a1ü2,a1Auftrag1];
 var a1Array1 =[ ü12, a1Auftrag3, a1Auftrag4,a1Auftrag6, a1Auftrag7];
 var a1Array2 = [ ü13];
-var a1Array = [a1Array00, a1Array0, a1Array1, a1Array2];
+var a1Array3 = [ myt00, myt01, myt02, myt03];
+var a1Array = [a1Array00, a1Array0, a1Array1, a1Array2,a1Array3];
 
 
 var ü2 = "Jadefeuermeister (Mara & Anathos)";
@@ -59,11 +66,18 @@ var a2Auftrag41='Das "Minispiel" für die Tanks kann auch andere Spieler treffen
 var a2Auftrag5='100 Energie:  verwandlung';
 var a2Auftrag51='Um Mara herum verteilen, aus "Drachenodem" moven.';
 
+var myt10 = '<span class="redtext"> MYTHISCH: </span>';
+var myt11 = '<span class="redtext"> Schlag der Hundert Fäuste </span> -> Minispiel muss jeder möglichst gut können! Macht sehr hohen Schaden!';
+var myt12 = 'Es gibt zwei Xuen- Adds, die den Spielern folgen!';
+var myt13 =' Bei 60 Energie: 4 <span class="redtext">Machtsphäre</span> sammeln und bei der Barriere (rote Kugel) benutzen! (sonst nicht angreifbar). Ausserdem spawnen immer mehr Geister, die ein Zurückgehen schwierig machen';
+var a2Array3 = [myt10, myt11, myt12, myt13];
 
 var a2Array0 = [ü2, a2Text0, a2Text,a2Text2, a2Auftrag1, a2Auftrag2];
 var a2Array1 = [a2Auftrag3, a2Auftrag30];
 var a2Array2 = [a2Auftrag4, a2Auftrag40];
-var a2Array = [a2Array0, a2Array1, a2Array2];
+
+
+var a2Array = [a2Array0, a2Array1, a2Array2,a2Array3];
 
 
 var ü3 = "Grong der Zurückgekehrte";
@@ -75,7 +89,15 @@ var a3Auftrag2 = "aus Bodeneffekten gehn (Schmettern)";
 var a3Auftrag3 = "40% - HT";
 var a3Array0 = [ü3, a3Text, a3Auftrag0, a3Auftrag00, a3Auftrag1, a3Auftrag2];
 var a3Array1 = [a3Auftrag3];
-var a3Array = [a3Array0, a3Array1];
+
+var myt20 = '<span class="redtext"> MYTHISCH: </span>';
+var myt21 = '<span class="redtext"> Wildes brüllen </span> ist instant! (Timer genau beobachten, zusammen stehen!) ';
+var myt22 = '2 Adds gleichzeitig spawnen (Interrupt-Rotation vorher für beide Adds  festlegen!)';
+var myt23 ='GGf. 2. Add verzögert töten, damit man nicht zu häufig (unter 50 energie) resettet';
+var a3Array3 = [myt20, myt21, myt22, myt23];
+
+
+var a3Array = [a3Array0, a3Array1,a3Array3];
 
 
 var ü4 = "Schatzwächter/Opulenz";
@@ -107,7 +129,14 @@ var ü41A11 = "  Smaragd (hellgrün)/DD bufft dir selbst <span class='greentext'
 var a4Array0 = [ü4, a4Text, a4Auftrag1, a4Auftrag2, a4Auftrag3, a4Auftrag4, a4Auftrag5, a4Auftrag5, a4Auftrag6, a4Auftrag7, a4Auftrag8, a4Auftrag9, a4Auftrag10];
 var a4Array1 = [ü41,ü41A1,ü41A2,ü41A3];
 var a4Array2 = [ü41A4,ü41A5,ü41A6,ü41A7,ü41A8,ü41A9,ü41A10,ü41A11];
-var a4Array = [a4Array0, a4Array1,a4Array2 ];
+
+
+var myt30 = '<span class="redtext"> MYTHISCH: </span>';
+var myt31 = '<span class="redtext"> Chaotische Verschiebung </span> vertauscht Spieler (6 Sek Zeit um sich "nett" zu Positionieren, damit der andere nicht voll abgefuckt wird..^^) ';
+var myt32 = 'Boss: Goldene Pfützen zum Rand bringen, denn sie Heilen Blobs sonst gegen (und die Flächen werden auch größer durch "Surging Gold" cast)';
+var a4Array3 = [myt30, myt31, myt32];
+
+var a4Array = [a4Array0, a4Array1,a4Array2, a4Array3 ];
 
 
 
